@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "KeyError: 'test_account'",
+      "children" : [ {
+        "name" : "test_case[uicases1-chromium]",
+        "uid" : "54ebbddbcc7e56f8",
+        "parentUid" : "c58e89319778613e689e7c8843e5e2c0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1671450871805,
+          "stop" : 1671450871806,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'chromium'", "{'test002': {'descrption': '验证bing搜索功能正常', 'test_step': {'open': 'https://cn.bing.com/', 'fill1': {'selector': '#sb_form_q', 'value': 'test_account20221212'}, 'click1': '#search_icon > svg'}, 'expect_result': {'descrption': \"期望结果页面的tab标签'网页'两个字\", 'selector': 'id=b-scopeListItem-web', 'value': '网页'}}}" ]
+      } ],
+      "uid" : "c58e89319778613e689e7c8843e5e2c0"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

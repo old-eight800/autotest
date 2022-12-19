@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  autotest:
+    image: python:autotest
+    container_name: autotest_v1.1
+    build: .
+    command: python main.py
+    environment:
+      TZ: "Asia/Shanghai"
+    volumes:
+      - /home/autotest/log:/app/log
+      - /home/autotest/config:/app/config
+      - /home/jenkins/jenkins-compose/workspace/python_test/allure-results:/app/report/data

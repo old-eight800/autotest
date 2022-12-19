@@ -1,0 +1,31 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test001",
+    "uid" : "237f37270947371b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1671273031130,
+      "stop" : 1671273031130,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'chromium'", "{'test001': {'descrption': '验证错误的密码登录京东失败-提示账号名与密码不匹配，请重新输入', 'test_account': 'test_account20221212', 'test_passwd': '123', 'test_step': {'open': 'https://www.jd.com/', 'click': 'loginsubmit', 'fill': {'selector': \"id='nloginpwd'\", 'vaule': '123'}}, 'expect_result': '账号名与密码不匹配，请重新输入'}}" ]
+  }, {
+    "name" : "test002",
+    "uid" : "e93a3779d8b19478",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1671273031138,
+      "stop" : 1671273031138,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'chromium'", "{'test002': {'descrption': '验证错误的密码登录京东失败-提示账号名与密码不匹配，请重新输入2', 'test_account': 'test_account20221212', 'test_passwd': '123', 'test_step': {'open': 'https://www.jd.com/', 'click': 'loginsubmit', 'fill': {'selector': \"id='nloginpwd'\", 'vaule': '123'}}, 'expect_result': '账号名与密码不匹配，请重新输入2'}}" ]
+  } ]
+}

@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "test_case.UI.test_ui",
+    "children" : [ {
+      "name" : "test001",
+      "uid" : "c8581dfd15eca942",
+      "parentUid" : "eab20532f30a8e5a4640f97b7b553edf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1671329043816,
+        "stop" : 1671329054355,
+        "duration" : 10539
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'chromium'", "{'test001': {'descrption': '验证京东登录按钮跳转功能正常', 'test_account': 'test_account20221212', 'test_passwd': '123', 'test_step': {'open': 'https://www.jd.com/', 'click1': 'id=msShortcutLogin'}, 'expect_result': '京东登录注册'}}" ]
+    }, {
+      "name" : "test002",
+      "uid" : "cd834cfe4925aa35",
+      "parentUid" : "eab20532f30a8e5a4640f97b7b553edf",
+      "status" : "broken",
+      "time" : {
+        "start" : 1671329054366,
+        "stop" : 1671329090938,
+        "duration" : 36572
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'chromium'", "{'test002': {'descrption': '验证bing搜索功能正常', 'test_account': 'test_account20221212', 'test_passwd': '123', 'test_step': {'open': 'https://cn.bing.com/', 'fill1': {'selector': '#sb_form_q', 'vaule': 'test_account20221212'}, 'click1': '#sb_form_go'}, 'expect_result': '验证bing搜索功能正常'}}" ]
+    } ],
+    "uid" : "test_case.UI.test_ui"
+  } ],
+  "name" : "packages"
+}

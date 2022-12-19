@@ -1,0 +1,41 @@
+{
+  "ae53c80d3c10ecebdb39ded39fcfa5ec" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c8581dfd15eca942",
+      "status" : "passed",
+      "time" : {
+        "start" : 1671329043816,
+        "stop" : 1671329054355,
+        "duration" : 10539
+      }
+    } ]
+  },
+  "87002ed439629bbac05f1bd39f2707d0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cd834cfe4925aa35",
+      "status" : "broken",
+      "statusDetails" : "playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for locator(\"#sb_form_go\").first\n  locator resolved to hidden <input value=\"\" type=\"submit\" name=\"search\" tabindex=\"-…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================",
+      "time" : {
+        "start" : 1671329054366,
+        "stop" : 1671329090938,
+        "duration" : 36572
+      }
+    } ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "KTECH00049",
+    "children" : [ {
+      "name" : "28340-MainThread",
+      "children" : [ {
+        "name" : "test002",
+        "uid" : "da12e5a6dfeb5ec4",
+        "parentUid" : "8ed08bcd8b3609869bb9cdd495b9ed2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1671413764477,
+          "stop" : 1671413774296,
+          "duration" : 9819
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'chromium'", "{'test002': {'descrption': '验证bing搜索功能正常', 'test_account': 'test_account20221212', 'test_passwd': '123', 'test_step': {'open': 'https://cn.bing.com/', 'fill1': {'selector': '#sb_form_q', 'value': 'test_account20221212'}, 'click1': '#search_icon > svg'}, 'expect_result': {'descrption': \"期望结果页面的tab标签'网页'两个字\", 'selector': 'id=b-scopeListItem-web', 'value': '网页'}}}" ]
+      }, {
+        "name" : "test001",
+        "uid" : "3dd65e5bd5de2138",
+        "parentUid" : "8ed08bcd8b3609869bb9cdd495b9ed2a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1671413756475,
+          "stop" : 1671413764457,
+          "duration" : 7982
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'chromium'", "{'test001': {'descrption': '验证京东登录按钮跳转功能正常', 'test_account': 'test_account20221212', 'test_passwd': '123', 'test_step': {'open': 'https://www.jd.com/', 'click1': 'id=msShortcutLogin'}, 'expect_result': {'descrption': '期望页面header元素的文案是京东登录注册', 'selector': '#header > span.text-header', 'value': '京东登录注册'}}}" ]
+      } ],
+      "uid" : "8ed08bcd8b3609869bb9cdd495b9ed2a"
+    } ],
+    "uid" : "e2a49760e682b7950d3f1a6f48b91373"
+  } ]
+}

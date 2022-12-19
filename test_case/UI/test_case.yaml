@@ -1,0 +1,41 @@
+# UI 测试用例编写指南
+# 按照如下规范编写, 以关键字驱动测试执行
+# 用例命名,为便于管理及美观整洁建议统一命名,如xxx(project)-xxx(mudule)-test001
+# descrption(用例描述)
+# test_step(测试步骤) 编写样例   test_step: { "open": "https://www.jd.com/",
+#                                 "click1": "id=msShortcutLogin",
+#                                 "fill1": {"selector": "#sb_form_q", "value": "test_account20221212"},
+#                                 "swipe": {"x": 500, y: 800}
+#                                 "sleep": 3000
+#                                }
+# 支持的关键字有open(打开url), click1(点击事件,1则代表第一次点击,同理click2代表该测试用例中的第二次点击)
+# sleep(显式等待,使用毫秒),fill1(文本填充事件,需传入两个键值对,一个填充的元素对象,一个填充的值。数字1的用法与click1一致)
+# swipe(页面滑动事件)
+# expect_result(期望结果) 编写样例 {  "descrption": "期望页面"#header > span.text-header"元素的文案是'京东登录注册'",
+#                                   "selector": "#header > span.text-header",
+#                                    "value": "京东登录注册"
+#                                   }
+#""""
+
+
+test001:
+  descrption: "验证京东登录按钮跳转功能正常"
+  test_step: { "open": "https://www.jd.com/",
+               "click1": "id=msShortcutLogin",
+               "sleep": 3000
+              }
+  expect_result: {  "descrption": "期望页面"#header > span.text-header"元素的文案是'京东登录注册'",
+                    "selector": "#header > span.text-header",
+                    "value": "京东登录注册"
+                  }
+
+test002:
+  descrption: "验证bing搜索功能正常"
+  test_step: { "open": "https://cn.bing.com/",
+               "fill1": {"selector": "#sb_form_q", "value": "test_account20221212"},
+               "click1": "#search_icon > svg"
+              }              
+  expect_result: {  "descrption": "期望结果页面的tab标签'网页'两个字",
+                    "selector": "id=b-scopeListItem-web",
+                    "value": "网页"
+                  }

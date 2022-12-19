@@ -1,0 +1,31 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test001",
+    "uid" : "b10177d763c97a1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1671328534849,
+      "stop" : 1671328542938,
+      "duration" : 8089
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'chromium'", "{'test001': {'descrption': '验证错误的密码登录京东失败-提示账号名与密码不匹配，请重新输入', 'test_account': 'test_account20221212', 'test_passwd': '123', 'test_step': {'open': 'https://www.jd.com/', 'click1': 'id=msShortcutLogin'}, 'expect_result': '账号名与密码不匹配，请重新输入'}}" ]
+  }, {
+    "name" : "test002",
+    "uid" : "da31a92a57c5b3bf",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1671328542957,
+      "stop" : 1671328576417,
+      "duration" : 33460
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'chromium'", "{'test002': {'descrption': '验证错误的密码登录京东失败-提示账号名与密码不匹配，请重新输入2', 'test_account': 'test_account20221212', 'test_passwd': '123', 'test_step': {'open': 'https://cn.bing.com/', 'fill1': {'selector': \"id='sb_form_q'\", 'vaule': 'test_account20221212'}}, 'expect_result': '账号名与密码不匹配，请重新输入2'}}" ]
+  } ]
+}

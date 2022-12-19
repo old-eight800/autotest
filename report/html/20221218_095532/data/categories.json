@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for locator(\"id='sb_form_q'\")\n============================================================",
+      "children" : [ {
+        "name" : "test002",
+        "uid" : "da31a92a57c5b3bf",
+        "parentUid" : "2de9c4bd5c3857f078c92454c895ecea",
+        "status" : "broken",
+        "time" : {
+          "start" : 1671328542957,
+          "stop" : 1671328576417,
+          "duration" : 33460
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'chromium'", "{'test002': {'descrption': '验证错误的密码登录京东失败-提示账号名与密码不匹配，请重新输入2', 'test_account': 'test_account20221212', 'test_passwd': '123', 'test_step': {'open': 'https://cn.bing.com/', 'fill1': {'selector': \"id='sb_form_q'\", 'vaule': 'test_account20221212'}}, 'expect_result': '账号名与密码不匹配，请重新输入2'}}" ]
+      } ],
+      "uid" : "2de9c4bd5c3857f078c92454c895ecea"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
