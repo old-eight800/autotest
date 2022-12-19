@@ -56,7 +56,7 @@
 注： 如果需要移植的目标服务器无法联网 可以通过pip download -d packages/ -r requirements.txt 命令下载依赖包到当前目录的packages/文件夹中，目标服务器再通过 pip install --no-index --find-links=packages/ -r requirements.txt 离线安装依赖包
 ```
 
-2. 创建如下mysql库表用于管理测试用例
+2. 创建如下mysql库表用于管理API测试用例
 ```
 CREATE TABLE `Api_test_detail` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -99,6 +99,27 @@ CREATE TABLE `Api_test_result` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
+6. UI测试用例编写
+```
+UI 测试用例编写指南
+按照如下规范编写, 以关键字驱动测试执行
+用例命名,为便于管理及美观整洁建议统一命名,如xxx(project)-xxx(mudule)-test001
+descrption(用例描述)
+test_step(测试步骤) 编写样例   test_step: { "open": "https://www.jd.com/",
+                                "click1": "id=msShortcutLogin",
+                                "fill1": {"selector": "#sb_form_q", "value": "test_account20221212"},
+                                "swipe": {"x": 500, y: 800}
+                                "sleep": 3000
+                               }
+支持的关键字有open(打开url), click1(点击事件,1则代表第一次点击,同理click2代表该测试用例中的第二次点击)
+sleep(显式等待,使用毫秒),fill1(文本填充事件,需传入两个键值对,一个填充的元素对象,一个填充的值。数字1的用法与click1一致)
+swipe(页面滑动事件)
+expect_result(期望结果) 编写样例 {  "descrption": "期望页面"#header > span.text-header"元素的文案是'京东登录注册'",
+                                   "selector": "#header > span.text-header",
+                                    "value": "京东登录注册"
+                                   }
+```
+
 5. 启用docker执行API自动化测试工具,执行 ```docker-compose up``` 开始构建并运行
 (非docker部署方式可以执行  ```python main.py``` )
 
