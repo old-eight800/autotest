@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Dec 19 17:17:27 CST 2022","Mon Dec 19 17:17:35 CST 2022","8036","test_case.UI","test_ui","","","","test001",""
-"passed","Mon Dec 19 17:17:35 CST 2022","Mon Dec 19 17:17:39 CST 2022","3742","test_case.UI","test_ui","","","","test002",""

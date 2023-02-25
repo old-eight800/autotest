@@ -26,9 +26,10 @@
 │  └─YYYY-MM-DD.log	# 日志文件
 ├─report
 │  ├─data           # allure测试结果数据
-│  └─html			      # allure报告
+│  ├─html			      # allure报告
+│  └─video		      # allure报告
 ├─test-result       # 测试录屏结果输出路径
-├─test
+├─test_case
 |  |
 |  ├─API
 |  | ├─conftest.py	# API测试初始化
@@ -80,26 +81,10 @@ CREATE TABLE `Api_test_detail` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
-3. 编写测试用例
+3. 编写API测试用例
     测试用例使用数据库维护,需要配合测试平台使用,详见测试管理平台的使用
 
-4. 创建如下库表用于记录测试结果及测试报告到数据库,用于测试管理平台获取报告并展示
-```
-CREATE TABLE `Api_test_result` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `total` int(11) NOT NULL COMMENT '用例总数',
-  `passed` int(11) DEFAULT NULL COMMENT '通过数',
-  `failed` int(11) DEFAULT NULL COMMENT '失败数',
-  `error` int(11) DEFAULT NULL COMMENT '错误数',
-  `skipped` int(11) DEFAULT NULL COMMENT '跳过数',
-  `passed_rate` varchar(100) NOT NULL COMMENT '测试通过率',
-  `report_path` varchar(128) DEFAULT NULL COMMENT '测试报告路径',
-  `create_time` datetime NOT NULL COMMENT '创建时间',
-  `update_time` datetime NOT NULL COMMENT '更新时间',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
-6. UI测试用例编写
+4. UI编写UI测试用例
 ```
 UI 测试用例编写指南
 按照如下规范编写, 以关键字驱动测试执行
@@ -125,3 +110,7 @@ expect_result(期望结果) 编写样例 {  "descrption": "期望页面"#header 
 
 ## jenkins集成
 https://blog.csdn.net/weixin_45467232/article/details/123460355
+
+
+
+
